@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-	sortingPrimer "main/algorithms/sort"
+	dynamicProgramming "main/algorithms/dynamic-programming"
 )
 
 func main() {
-	arr := []int{5, 2, -1, 3, 0, 9}
-
-	sortedArr := sortingPrimer.MergeSort(arr)
-	fmt.Println(sortedArr)
+	arr := []int{2, 7, 9, 3, 1}
+	fmt.Println(dynamicProgramming.Rob(arr))
 }
